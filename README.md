@@ -13,6 +13,6 @@ Extra 20 points:  Store all password creation attempts in an array and print all
 
 Screenshots:
 
-![alt text](https://github.com/techinologic/CoppinCS_CodingChallengeSPR2018_2/blob/master/ss1.PNG")
-![alt text](https://github.com/techinologic/CoppinCS_CodingChallengeSPR2018_2/blob/master/ss2.PNG")
+![alt text](https://github.com/techinologic/CoppinCS_CodingChallengeSPR2018_2/blob/master/ss1.PNG?raw=true")
+![alt text](https://github.com/techinologic/CoppinCS_CodingChallengeSPR2018_2/blob/master/ss2.PNG?raw=true")
 
