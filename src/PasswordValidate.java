@@ -3,10 +3,10 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Main {
+public class PasswordValidate {
 
-    static Pattern pattern;
-    static Matcher matcher;
+    public static Pattern pattern;
+    public static Matcher matcher;
     static ArrayList<String> pass;
 
     // initialize the pattern where the password will be
@@ -16,7 +16,7 @@ public class Main {
     // (?=.*[a-z]) <-- should contain 1 lowercase letter a-z.
     // (?=.*[A-Z]) <-- should contain 1 uppercase letter A-Z.
     // (?=.*\d) <-- must contain 1 digit from 0-9.
-    private static final String PASSWORD_REQUIREMENTS =
+    public static final String PASSWORD_REQUIREMENTS =
             "((?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{6,100})";
 
     public static void main(String[] args) {
