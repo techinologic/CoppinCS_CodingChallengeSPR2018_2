@@ -82,5 +82,32 @@ class PasswordValidateTest {
                 + ":  Passed!");
     }
 
+    @Test
+    @DisplayName("23452345sdfgsdfgsdfgsdfgsfgsdfgjy656745hxdXbdsrwty34563456" +
+            "345dsfgsdhdfhgmhnsdfbs = valid")
+    void test7(){
+        testPattern = Pattern.compile(PasswordValidate.PASSWORD_REQUIREMENTS);
+        String password = "23452345sdfgsdfgsdfgsdfgsfgsdfgjy656745hxdXbdsrwty345" +
+                "63456345dsfgsdhdfhgmhnsdfbs";
+        Matcher matcher = testPattern.matcher(password);
+        boolean result = matcher.matches();
+        assertEquals(true, result, "Assert password valid");
+        System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName()
+                + ":  Passed!");
+    }
+
+    @Test
+    @DisplayName("23452345sdfgsdfgsdfgsdfgsfgsdfgjy656745hxdXbdsrwty345" +
+            "63456345dsfgsdhdfhgmhnsdfbs = 80 chars")
+    void test8(){
+        ArrayList<String> pass = new ArrayList<>();
+        pass.add("23452345sdfgsdfgsdfgsdfgsfgsdfgjy656745hxdXbdsrwty3456345" +
+                "6345dsfgsdhdfhgmhnsdfbs");
+        assertEquals(80, pass.get(pass.size()-1).length(), "Assert password expire");
+        System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName()
+                + ":  Passed!");
+    }
+
+
 
 }
