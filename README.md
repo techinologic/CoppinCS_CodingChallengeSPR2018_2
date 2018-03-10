@@ -19,4 +19,4 @@ Extra 20 points:  Store all password creation attempts in an array and print all
 ![alt text](https://github.com/techinologic/CoppinCS_CodingChallengeSPR2018_2/blob/master/ss2.PNG?raw=true")
 
 ## Unit Tests: 
-![alt text](https://github.com/techinologic/CoppinCS_CodingChallengeSPR2018_2/blob/master/tests.PNG?raw=true")
+![alt text](https://github.com/techinologic/CoppinCS_CodingChallengeSPR2018_2/blob/master/unittests.PNG?raw=true")
