@@ -1,5 +1,6 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -12,6 +13,7 @@ class PasswordValidateTest {
     Pattern testPattern;
 
     @Test
+    @DisplayName("Jacksparrow1710 = valid")
     void test1(){
         testPattern = Pattern.compile(PasswordValidate.PASSWORD_REQUIREMENTS);
         String password = "Jacksparrow1710";
@@ -23,6 +25,7 @@ class PasswordValidateTest {
     }
 
     @Test
+    @DisplayName("jacksparrow = invalid")
     void test2(){
         testPattern = Pattern.compile(PasswordValidate.PASSWORD_REQUIREMENTS);
         String password = "jacksparrow";
@@ -34,6 +37,7 @@ class PasswordValidateTest {
     }
 
     @Test
+    @DisplayName("JACKSPARROW1710 = invalid")
     void test3(){
         testPattern = Pattern.compile(PasswordValidate.PASSWORD_REQUIREMENTS);
         String password = "JACKSPARROW1710";
@@ -45,6 +49,7 @@ class PasswordValidateTest {
     }
 
     @Test
+    @DisplayName("jacksparrow1710 = invalid")
     void test4(){
         testPattern = Pattern.compile(PasswordValidate.PASSWORD_REQUIREMENTS);
         String password = "jacksparrow1710";
@@ -56,6 +61,7 @@ class PasswordValidateTest {
     }
 
     @Test
+    @DisplayName("JAmesBond007 = valid")
     void test5(){
         testPattern = Pattern.compile(PasswordValidate.PASSWORD_REQUIREMENTS);
         String password = "JAmesBond007";
@@ -67,6 +73,7 @@ class PasswordValidateTest {
     }
 
     @Test
+    @DisplayName("JAmesBond007 = 12 chars")
     void test6(){
         ArrayList<String> pass = new ArrayList<>();
         pass.add("JAmesBond007");
